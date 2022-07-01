@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="patient_tag_vip" model="patient.tag">
+        <field name="name">VIP Female Patients</field>
+    </record>
+
+    <record id="patient_tag_kid" model="patient.tag">
+        <field name="name">VIP KIds Patients</field>
+        <field name="active" eval="False"/>
+    </record>
+</odoo>

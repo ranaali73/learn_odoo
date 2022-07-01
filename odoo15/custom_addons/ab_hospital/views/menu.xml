@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- SMS Marketing -->
+    <menuitem id="menu_hospital_root"
+              name="Hospital"
+              web_icon="ab_hospital,static/description/settings.png"
+              sequence="0"
+    />
+    <menuitem id="menu_hospital_master"
+              name="Patient Details"
+              parent="menu_hospital_root"
+              sequence="0"
+    />
+    <menuitem id="menu_hospital"
+              name="Patient"
+              action="action_hospital_patient_1"
+              parent="menu_hospital_master"
+              sequence="0"
+    />
+
+    <menuitem id="menu_female_hospital"
+              name="Female Patient"
+              action="action_hospital_female_patient_1"
+              parent="menu_hospital_master"
+              sequence="20"
+    />
+
+    <menuitem id="menu_appointment_master"
+              name="Appointment"
+              parent="menu_hospital_root"
+              sequence="0"
+    />
+    <menuitem id="menu_appointment"
+              name="Appointments"
+              action="action_hospital_appointment_1"
+              parent="menu_appointment_master"
+              sequence="10"
+    />
+
+
+    <menuitem id="menu_configuration"
+              name="Configuration"
+              parent="menu_hospital_root"
+              sequence="100"
+    />
+    <menuitem id="menu_patient_tag"
+              name="Tags"
+              action="action_patient_tag"
+              parent="menu_configuration"
+              sequence="10"
+    />
+
+    <menuitem id="menu_cancel_appointment"
+              name="Cancellation"
+              action="action_cancel_appointment"
+              parent="menu_appointment_master"
+              sequence="20"
+    />
+
+
+</odoo>
